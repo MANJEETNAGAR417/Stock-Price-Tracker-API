@@ -1,7 +1,10 @@
-import sqlite3, requests, smtplib
+import sqlite3, requests, smtplib, os
 from flask import Flask, jsonify, request
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
+from env import load_dotenv
+
+load_dotenv()
 
 EMAIL = "manjeet02220@gmail.com"
 EMAIL_PASSWORD = "cryhoczqeecwshcd"

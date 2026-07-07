@@ -6,9 +6,9 @@ from env import load_dotenv
 
 load_dotenv()
 
-EMAIL = "manjeet02220@gmail.com"
-EMAIL_PASSWORD = "cryhoczqeecwshcd"
-API_KEY="NAXVXY4GK2E9UFELF"
+EMAIL = os.getenv("manjeet02220@gmail.com")
+EMAIL_PASSWORD = os.getenv("cryhoczqeecwshcd")
+API_KEY = os.getenv("NAXVXY4GK2E9UFELF")
 
 app = Flask(__name__)
 
